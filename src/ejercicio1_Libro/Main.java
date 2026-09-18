@@ -1,5 +1,5 @@
 package ejercicio1_Libro;
-public class Main {
+public class main {
     public static void main(String[] args) {
         Libro libro1 = new Libro();
         libro1.mostrarDetalles();

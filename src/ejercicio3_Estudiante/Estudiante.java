@@ -6,21 +6,18 @@ public class Estudiante {
     private int edad;
     private String curso;
 
-
     public Estudiante() {
         this("Sin nombre", 0);
     }
-
 
     public Estudiante(String nombre, int edad) {
         this(nombre, edad, "Sin asignar");
     }
 
-
     public Estudiante(String nombre, int edad, String curso) {
-        this.nombre = (nombre == null || nombre.isBlank()) ? "Sin nombre" : nombre;
+        this.nombre = (nombre == null || nombre.isBlank()) ? "Sin nombre" : nombre.trim();
         this.edad = (edad < 0) ? 0 : edad;
-        this.curso = (curso == null || curso.isBlank()) ? "Sin asignar" : curso;
+        this.curso = (curso == null || curso.isBlank()) ? "Sin asignar" : curso.trim();
     }
 
     public String getNombre() { return nombre; }

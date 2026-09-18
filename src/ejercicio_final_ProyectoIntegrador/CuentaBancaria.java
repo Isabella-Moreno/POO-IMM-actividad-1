@@ -45,7 +45,7 @@ public class CuentaBancaria {
         System.out.println("Tipo de cuenta: " + tipoCuenta);
         System.out.println("Saldo: $" + saldo);
     }
-
+//.
     @Override
     public String toString() {
         return "CuentaBancaria{numeroCuenta='" + numeroCuenta + "', saldo=" + saldo +
